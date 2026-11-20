@@ -6,8 +6,9 @@
 // it copies POST.json from the repository root to /output/POST.json.
 // Nothing this program writes is judged; the house reads the post from X.
 //
-// POST.json holds a placeholder until the post is up. Replace it with the
-// post's address (https://x.com/<handle>/status/<id>) before submitting.
+// POST.json holds the live post's address now: the meme went up on X from
+// @Yapperman007, and POST.json points at that post. If the post ever has to
+// be re-posted, point POST.json at the new address before submitting.
 //
 // Local run:
 //   mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
